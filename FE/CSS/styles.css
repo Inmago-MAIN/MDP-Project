@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Square+Peg&display=swap');
+/* 표기 순 TAG > ID > CLASS */
+
+ul {
+    display: flex;
+    gap: 24px;
+}
+
+a {
+    font-family: 'Square Peg', cursive;
+    text-decoration: none;
+    color: black;
+    font-size: 3.3vw;
+}
+
+#typing-Hello {
+    width: auto;
+    text-align: center;
+    color: white;
+}
+
+.fixedHeader {
+    width: 100%;
+    position: fixed;
+}
+
+.mainHeader {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Square Peg', cursive;
+    font-size: 5vw;
+}
+
+.information {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.terminal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    border: white;
+    background-color: black;
+    width: 600px;
+    height: 100px;
+}
