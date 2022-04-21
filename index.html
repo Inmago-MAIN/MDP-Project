@@ -11,7 +11,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">  <!-- 모든 요소 감싸는 태그 -->
+    <div class="container" style="overflow: hidden;">  <!-- 모든 요소 감싸는 태그 -->
         <header class="fixedHeader">  <!-- logo 및 메뉴 바 -->       
             <nav class="mainHeader">
                 <div class="left">
@@ -29,12 +29,16 @@
             <div class="terminal">
                 <h1 id="typing-Hello">> 정보통신과@intec.com : <span id="typing">안녕하세요. 여러분과 만날 시간을 손꼽아 기다렸답니다! 😊</p></h1>
             </div>
-            <div class="info-animation"></div> <!-- 애니메이션 넣을 예정 -->
+            <div class="greeting-animation"></div> <!-- 애니메이션 넣을 예정 -->
             <ul class="greetings">
-                <li class="fadeout" data-aos="fade-up" data-aos-offset="-300" data-aos-anchor-placement: bottom-top>제출되지 않을 때가 있는 출석체크 및 과제란</li>
+                <li class="fadeout" data-aos="fade-up" data-aos-offset="-300">제출되지 않을 때가 있는 출석체크 및 과제란</li>
                 <li class="fadeout" data-aos="fade-up" data-aos-offset="-300">자주 오류가 발생하는 비대면 미팅룸</li>
                 <li class="fadeout" data-aos="fade-up" data-aos-offset="-300">학생들이 쓰기에는 각지고 딱딱한 UI</li>
-                <li class="fadeout" data-aos="fade-up" data-aos-offset="-300">그래서 저희가 새로운 것을 만들어봤어요!</li>
+                <li class="fadeout" data-aos="fade-up" data-aos-offset="-300">그래서 저희만의 새로운 "것"을 만들어봤어요!</li>
+            </ul>
+            <ul class="infoText">
+                <li class="infoText"><span class="animationText" style="position: absolute; left: 5%;" data-aos="fade-down-right" data-aos-offset="150">Class:in</span></li>
+                <li class="infoText"><span class="animationText" style="position: absolute; right: 5%;" data-aos="fade-down-left" data-aos-offset="150">Anonymous:IN</span></li>
             </ul>
         </main>
     </div>
