@@ -5,7 +5,6 @@
 
 
 body {
-    background: url(../images/background_paper.jpg);
     overflow-x: hidden;
 }
 
@@ -34,10 +33,11 @@ i {
 }
 
 #typing-Hello {
+    padding-left: 12px;
     padding-top: 12px;
-    font-size: 1.75vh;
+    font-size: 2.0vh;
     width: auto;
-    text-align: center;
+    text-align: left;
     color: white;
 }
 
@@ -47,12 +47,13 @@ i {
 
 .fixedHeader {
     z-index: 99;
-    background-color: white;
+    background-color: transparent;
     width: 100vw;
     position: fixed;
 }
 
 .mainHeader {
+    background-color: white;
     margin: auto 0;
     display: flex;
     justify-content: space-around;
@@ -75,12 +76,12 @@ i {
     font-family: 'Gowun Dodum', sans-serif;
     position: absolute;
     left: 50%;
-    top: 140vw;
+    top: 30vw;
     transform: translate(-50% , -50%);
     border: white;
     background-color: black;
-    width: 65vh;
-    height: 100px;
+    width: 100vh;
+    height:200px;
     border-radius: 8px;
 }
 
@@ -89,18 +90,18 @@ i {
     font-weight: bold;
     content: '정보통신과@intec.com';
     text-align: center;
-    width: 65vh;
+    width: 100vh;
     height: 14px;
     background-color: gray;
     position: absolute;
-    top: -5.5%;
+    top: -3.5%;
 }
 
 .greetings {
     width: 90%;
     position: absolute;
     left: 50%;
-    top: 120%;
+    top: 180%;
     transform: translate(-50%,-80%);
 }
 
