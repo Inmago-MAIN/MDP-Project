@@ -3,6 +3,12 @@
 
 /* 표기 순 TAG > ID > CLASS */
 
+
+body {
+    background: url(../images/background_paper.jpg);
+    overflow-x: hidden;
+}
+
 :root {
     --ti-cursor-margin-left: 0.1em;
 }
@@ -17,6 +23,10 @@ a {
     text-decoration: none;
     color: black;
     font-size: 3.3vw;
+}
+
+i {
+    font-size: 1.5vw;
 }
 
 .nav:active {
@@ -36,12 +46,14 @@ a {
 }
 
 .fixedHeader {
+    z-index: 99;
+    background-color: white;
     width: 100vw;
     position: fixed;
 }
 
 .mainHeader {
-    margin-top: 24px;
+    margin: auto 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -63,7 +75,7 @@ a {
     font-family: 'Gowun Dodum', sans-serif;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 140vw;
     transform: translate(-50% , -50%);
     border: white;
     background-color: black;
@@ -85,10 +97,10 @@ a {
 }
 
 .greetings {
-    width: 100;
+    width: 90%;
     position: absolute;
     left: 50%;
-    top: 150%;
+    top: 120%;
     transform: translate(-50%,-80%);
 }
 
@@ -100,7 +112,7 @@ a {
     padding-top: 20vh;
 }
 
-.infoText {
+.aniLogo {
     font-weight: bold;
     font-family: 'Square Peg', cursive;
     display: flex;
@@ -109,5 +121,16 @@ a {
     font-size: 5vw;
     top: 110vh;
     left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.aniDes {
+    font-family: 'Gowun Dodum', sans-serif;
+    width: 100%;
+    font-weight: bold;
+    left: 50%;
+    font-size: 1.1vw;
+    position: absolute;
+    top: 120vh;
     transform: translate(-50%,-50%);
 }
