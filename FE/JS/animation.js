@@ -1,5 +1,14 @@
-const fixedHeader = document.querySelector(".fixedHeader");
-const fadeoutText = document.querySelector(".fadeout");
+document.querySelector(".logo").addEventListener("click",()=>{
+    window.scroll({top: 0 ,behavior: 'smooth'});
+})
+
+document.querySelector(".pages").addEventListener("click",()=>{
+    window.scroll({top: 2000 ,behavior: 'smooth'});
+});
+
+document.querySelector(".home").addEventListener("click",()=>{
+    window.scroll({top: 0 , behavior: 'smooth'});
+});
 
 document.addEventListener("DOMContentLoaded",()=>{
     AOS.init();
@@ -7,3 +16,4 @@ document.addEventListener("DOMContentLoaded",()=>{
         .pause(1000)
         .go();
 });
+
