@@ -18,10 +18,11 @@ body {
 
 .navs {
     display: flex;
-    gap: 24px;
+    gap: 5vw;
 }
 
 a {
+    cursor: pointer;
     font-family: 'Square Peg', cursive;
     text-decoration: none;
     color: black;
@@ -36,10 +37,14 @@ i {
     transform: scale(0.89);
 }
 
+#typing {
+    font-size: 0.9vw;
+}
+
 #typing-Hello {
     padding-left: 12px;
-    padding-top: 12px;
-    font-size: 2.0vh;
+    padding-top: 18px;
+    font-size: 0.8vw;
     width: auto;
     text-align: left;
     color: white;
@@ -79,24 +84,29 @@ i {
 }
 
 .terminal {
+    max-width: 700px;
+    min-width: 490px;
     font-family: 'Gowun Dodum', sans-serif;
     position: absolute;
     left: 50%;
-    top: 30vw;
+    top: 45%;
     transform: translate(-50% , -50%);
     border: white;
     background-color: black;
-    width: 100vh;
-    height:200px;
+    min-width: 50;
+    width: 65vw;
+    height: 10vw;
     border-radius: 8px;
 }
 
 .terminal::before {
+    max-width: 700px;
+    min-width: 490px;
     font-size: 13px;
     font-weight: bold;
     content: '정보통신과@intec.com';
     text-align: center;
-    width: 100vh;
+    width: 65vw;
     height: 14px;
     background-color: gray;
     position: absolute;
@@ -107,7 +117,7 @@ i {
     width: 100vw;
     position: absolute;
     left: 50%;
-    top: 230vh;
+    top: 170vh;
     transform: translate(-50%,-80%);
 }
 
@@ -145,7 +155,7 @@ i {
 .aniBtn {
     width: 100%;
     position: absolute;
-    top: 170vh;
+    top: 165vh;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -166,11 +176,19 @@ i {
     background: #D3D3D3;
 }
 
+.footerAnimation {
+    width: 100vw;
+    height: 5vh;
+    position: absolute;
+    top: 310vh;
+    margin-bottom: 5vh;
+}
+
 .etc {
     position: absolute;
     top: 380vh;
     background-color: black;
     width: 100vw;
-    height: 14vh;
+    height: 16vh;
 }
 
