@@ -78,9 +78,12 @@ i {
     align-items: center;
 }
 
+.left {
+    margin-top: 12px;
+}
+
 .logo {
     font-weight: bold;
-    font-family: 'Square Peg', cursive;
     font-size: 5vw;
 }
 
@@ -124,7 +127,7 @@ i {
     width: 100vw;
     position: absolute;
     left: 50%;
-    top: 170vh;
+    top: 165vh;
     transform: translate(-50%,-80%);
 }
 
@@ -143,7 +146,7 @@ i {
     position: absolute;
     width: 100%;
     font-size: 5vw;
-    top: 150vh;
+    top: 120vh;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -155,14 +158,14 @@ i {
     left: 50%;
     font-size: 1.4vw;
     position: absolute;
-    top: 160vh;
+    top: 128vh;
     transform: translate(-50%,-50%);
 }
 
 .aniBtn {
     width: 100%;
     position: absolute;
-    top: 165vh;
+    top: 135vh;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -183,19 +186,8 @@ i {
     background: #D3D3D3;
 }
 
-.footerAnimation {
-    width: 100vw;
-    height: 5vh;
-    position: absolute;
-    top: 310vh;
-    margin-bottom: 5vh;
-}
-
 .etc {
     position: absolute;
-    top: 380vh;
-    background-color: black;
-    width: 100vw;
-    height: 16vh;
+    top: 300vh;
 }
 
