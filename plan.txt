@@ -1,0 +1,19 @@
+Ma:in 
+-> class.in 미팅 사이트
+-> anonymous.in 익명 게시판
+이동가능
+
+class.in - 미팅 사이트
+route를 통해 html 파일 여러개를 사용하지 않아도
+회원 정보만 받고 재랜더링을 시킬 수 있다.
+-> 여기서 오는 장점으로는 html 파일을 혼잡하게 두지 않아도 됨.
+route , component 사용으로 인해 
+Javascript -> React.js로 웹 프레임워크 변경 고민중
+socket.io , WebSockets , WebRTC  .. design -> AOS.js
+
+anonymous - 익명 게시판 사이트
+class.in에 회원 정보를 받거나 , 익명 게시판 따로 회원 정보를
+받거나 고민중.
+관리자 계정(?)
+
+
