@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <link rel="stylesheet" href="../css/form.css"> -->
+
+</head>
+
+<body>
+    <form method="post">
+        <!-- <img src="../source/main.png"> -->
+        <h1>회원가입</h1>
+        <ul>
+            <li>
+                <h3><label for="name">이름</label></h3>
+                <input type="text" name="name" id="name" placeholder="name">
+            </li>
+
+            <li>
+                <h3><label for="userName">아이디</label></h3>
+                <input type="text" name="userName" id="userName" placeholder="userName">
+            </li>
+
+            <li>
+                <h3><label for="password">비밀번호</label></h3>
+                <input type="text" name="password" id="password" placeholder="password">
+            </li>
+
+            <li>
+                <select name="department" id="department">
+                    <option value="department1">제어과</option>
+                    <option value="department2">회로과</option>
+                    <option value="department3">통신과</option>
+                    <option value="department4">인공지능과</option>
+                </select>
+                <select name="class" id="class">
+                    <option value="class1">1반</option>
+                    <option value="class2">2반</option>
+                    <option value="class3">3반</option>
+                </select>
+            </li>
+
+        </ul>
+
+        <input type="submit" value="가입" class="btn">
+
+    </form>
+</body>
+
+</html>

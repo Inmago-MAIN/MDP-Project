@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeJS Pagination</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        
+    <script>
+        $(function() {
+            $(".combox").hide();
+            $(".txt").click(function() {
+                $(".combox").show();
+            })
+    
+            $(".close").click(function() {
+                $(".combox").hide();
+            })
+
+            $(".txt").click(function() {
+                var h2 = $(this).find("h2").text();
+                var p = $(this).find("p").text();
+                $(".com h2").text(h2);
+                $(".com p").text(p);
+    
+            })
+        })
+    </script>
+
+    <style>
+        * {
+            box-sizing: border-box;            
+            margin: 0 auto;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        main{
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .txt{
+            width: 80%;
+            border: 1px solid black;
+            margin-bottom: 5px;
+        }
+
+        .txt p {
+            display: none;
+        }
+        
+        .combox {
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            margin: 0 auto;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+        
+        .com {
+            margin: 0 auto;
+            margin-top: 5%;
+            width: 80%;
+            height: 80vh;
+            text-align: center;
+            position: relative;
+            background-color: beige;
+            z-index: 2;
+        }
+        
+        .com h2{
+            height: 40px;
+        }
+
+        .close{
+            float: right;
+            position: relative;
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            border: 1px solid black;
+        }
+         
+        a {
+            margin-right: 15px;
+            color: blue;
+        }
+        
+        .selectedLink {
+            color: red;
+        }
+        
+        .break {
+            margin: 50px 0;
+        }
+        
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            text-decoration: none;
+        }
+
+        span{
+            font-size: 12px;
+            font-weight: lighter;
+        }
+
+        .communityTitle{
+            width: 80%;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 3px solid black;
+        }
+
+        .pageList{
+            width: 100%;
+            text-align: center;
+        }
+
+</style>
+
+</head>
+
+<body>
+
+    <div class="combox">
+        <div class="com">
+            <button class="close">X</button>
+            <h2></h2>
+            <hr>
+            <p></p>
+        </div>
+    </div>
+
+    <div class="communityTitle">
+        <h1>익명게시판</h1>
+    </div>
+
+    <% data.forEach(entry => { %>
+        <div class="txt">
+            <h2><%= entry.title %><span><%= entry.posting %></span></h2>
+            <p><%= entry.msg %></p>
+        </div>
+    <% }) %>
+
+    <div class="break"></div>
+
+    <div class="pageList">
+        <!--Display the links to the pages-->
+        <% if(page > 1) { %> <a href="/?page=<%=page-1%>">Before</a> <% } %>
+        <% for(let i = iterator; i <= endingLink; i++) { %>
+            <% if(i === page) { %>
+            <a class="selectedLink" href="/?page=<%=i%>"><%=i%></a>
+            <% continue; %>
+        <% } %>
+            <a href="/?page=<%=i%>"><%=i%></a>
+            <% } %>
+            <% if(page < numberOfPages) { %> <a href="/?page=<%=page+1%>">After</a> <% } %>
+    </div>
+
+</body>
+
+</html>
